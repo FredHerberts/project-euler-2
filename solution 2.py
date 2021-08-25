@@ -1,5 +1,5 @@
 import time
-
+start = time.time()
 def fibo(n):
     a, b, even_fibonacci_sum = 2, 1, 2
     for x in range(1, n):
@@ -10,5 +10,6 @@ def fibo(n):
             even_fibonacci_sum += a
 
 result = fibo(100)
-
+end = time.time()
+print(end - start)
 print(result)
